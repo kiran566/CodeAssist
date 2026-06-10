@@ -4,7 +4,6 @@ from pydantic import BaseModel
 from graph import graph
 
 from langchain_core.messages import HumanMessage
-
 app = FastAPI()
 class ChatRequest(BaseModel):
     question: str
