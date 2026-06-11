@@ -6,7 +6,6 @@ An intelligent coding assistant built using **LangGraph**, **LangChain**, **Groq
 
 ## 📸 Application Preview
 
-> Replace the image below with your project's screenshot.
 
 <p align="center">
   <img src="./Aiagent_ragtools/Photos/Screenshot (48).png" alt="AI Coding Mentor Screenshot" width="900"/>
