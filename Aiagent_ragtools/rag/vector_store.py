@@ -14,6 +14,7 @@ def create_vector_store(chunks,collection_name="coding_mentor"):
 
         
     )
+    # vectorstore.persist()
 
     return vectorstore
 # retriver
