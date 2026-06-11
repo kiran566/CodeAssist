@@ -1,10 +1,17 @@
 from rag.pdf_loader import load_pdf
 from rag.vector_store import create_vector_store
 
-chunks = load_pdf(
-    "uploads/binary_search _C.pdf"
-)
+chunks = load_pdf("uploads/binary_search _C.pdf")
 
-vectorstore = create_vector_store(chunks,collection_name='binary_search')
+print("Chunks:", len(chunks))
 
-print("PDF embedded successfully.")
+try:
+    vectorstore = create_vector_store(chunks)
+
+    print("Collection:", vectorstore._collection.name)
+    print("Count:", vectorstore._collection.count())
+
+except Exception as e:
+    print(type(e))
+    print(e)
+    raise
